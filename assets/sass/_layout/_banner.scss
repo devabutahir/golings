@@ -1,0 +1,46 @@
+//Banner Section Start
+.banner__section{
+    background-color: var(--banner-color);
+    overflow: hidden;
+    position: relative;
+    padding: 90px 0 100px;
+    .banner__shape{
+        position: absolute;
+        top: 15px;
+        left: 0;
+    }
+}
+.banner__thumb{
+    width: 524px;
+    img{
+        @include imgw;
+    }
+    position: relative;
+    .bet__one{
+        position: absolute;
+        top: 152px;
+        left: -150px;
+        animation: bet1 30s linear infinite;
+    }
+    .bet__two{
+        position: absolute;
+        right: 12px;
+        top: -63px;
+        animation: bet1 30s linear infinite;
+    }
+}
+.hero-thumb{
+    animation: updown 3s linear infinite;
+}
+.banner__content{
+    position: relative;
+    h1{
+        color: var(--white-color);
+        margin-bottom: 0px;
+    }
+    p{
+        color: var(--white-color);
+        margin-bottom: 35px;
+    }
+}
+//Banner Section End

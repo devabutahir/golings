@@ -1,0 +1,46 @@
+//About Section Start
+.about__thumb{
+    width: 100%;
+    position: relative;
+    img{
+        @include imgw;
+    }
+    .play{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: cirs 14s linear infinite;
+        .play-btn{
+            width: 100px;
+            height: 100px;
+            display: block;
+            z-index: 1;
+            position: relative;
+            img{
+                @include imgw;
+            }
+            @media screen and (max-width: 1199px){
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+    &::before{
+        position: absolute;
+        inset: 0;
+        content: "";
+        background: #35082B;
+        opacity: 0.47;
+    }
+}
+@keyframes cirs{
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+    
+}
+//About Section Start
